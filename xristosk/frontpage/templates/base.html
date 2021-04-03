@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="{% static 'css/materialize.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        .parallax-container {
+            height: 150px;
+        }
+    </style>
+    <title>xristos katsaros</title>
+</head>
+<body>
+
+<style type='text/css'>
+.card {
+    max-width: 400px;
+    max-height: 150px;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.card:hover {
+    background: black;
+}
+
+.primary {
+    color:orangered;
+}
+
+a {
+    transition: color 1s ease;
+}
+
+a:hover {
+    color: orangered;
+}
+</style>
+
+    <div class='container'>
+        <div class='nav-wrapper'>
+            <div class='row'>
+                <div class='valign-wrapper col s12'>
+                    <ul id='slide-out' class='sidenav grey darken-3'>
+                        <div class='container center'>
+                            <li>
+                                <img style="border-radius: 50%; max-width: 50%; padding-top: 50px; -webkit-filter: grayscale(100%); filter: grayscale(100%)" src="{% static 'imgs/xkphoto.png' %}">
+                            </li>
+                            <li><a href='#'>blog</a></li>
+                            <li><a href='#'>data viz</a></li>
+                            <li><a href='#'>datasets</a></li>
+                            <li><a href='#'>portfolio</a></li>
+                        </div>
+                    </ul>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger black"><i class="medium material-icons">menu</i></a>
+                    {% comment %} <nav>
+                        <h6 style='color: #bdbdbd; padding-left: 10px;'>projects</h6>
+                    </nav> {% endcomment %}
+                </div>
+            </div>
+        </div>
+        <div class='row center'>
+            <h4 class='primary'>XRISTOS KATSAROS</h4>
+            <h6>data science || machine learning || critical analysis
+        </div>
+            
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <script>
+        M.AutoInit();
+    </script>
+    
+</body>
+</html>
