@@ -122,7 +122,7 @@ USE_TZ = True
 import os 
 STATIC_URL = 'xristosk/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'xristosk/static')
+    os.path.join(BASE_DIR, 'xristosk/static'),
 ]
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'xristosk/static')

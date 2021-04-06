@@ -8899,6 +8899,10 @@ input[type=range]::-ms-thumb {
   color: white;
 }
 
+.primary {
+  color:orangered;
+}
+
 /* Clock Digital Display */
 .timepicker-digital-display {
   -webkit-box-flex: 1;

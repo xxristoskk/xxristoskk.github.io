@@ -2,6 +2,30 @@
 {% load static %}
 {% block content %}
 
+<style type='text/css'>
+    .card {
+        background: #e0e0e0;
+        max-width: 400px;
+        max-height: 150px;
+        color: orangered;
+        transition-property: background;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+    }
+    
+    .card:hover {
+        background: black;
+    }
+    
+    a {
+        transition: color 1s ease;
+    }
+    
+    a:hover {
+        color: orangered;
+    }
+</style>
+
 <div class="parallax-container">
     <div class="parallax"><img src="{% static 'imgs/zu0W9Me.png' %}"></div>
 </div>
@@ -9,9 +33,10 @@
 <div class="section black">
     <div class="row container">
         <h2 class="header primary">About Me</h2>
-        <h6 class="grey-text text-darken-2 lighten-3">
-        With a background in Philosophy, I aim to unpack and present data in a way that is accessible for any audience. My concentration is 
-        in Natural Language Processing, utilizing my knowledge of Critical Theory.
+        <h6 class="white-text">
+        I am a problem explorer and solver, interested in the intersection of Philosophy & Data. On their own, numbers don't have any meaning, and poor interpretations of them 
+        can result in loss of money, time, or the spreading of misinformation. That is why I'm dedicated to creating clean data and analyzing it from a Philosophically useful perspective 
+        which aims to be accessible for all audiences.
         </h6>
     </div>
 </div>

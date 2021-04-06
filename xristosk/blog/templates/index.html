@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class='row'>
+    <div class='col s12 center'>
+        <a href='https://xristos-katsaros.medium.com/'><img src="{% static 'imgs/medium logo.jpeg'%}" style='max-height: 25%; max-width: 25%'></a>
+        <p class='center-align'>See my Medium page for more blogs.</p>
+    </div>
+</div>
+
+{% for post in object_list %}
+
+<div class="parallax-container">
+    <div class="parallax"><img src="{% static 'imgs/zu0W9Me.png' %}"></div>
+</div>
+
+<div class="section black">
+    <div class="row container">
+        <h2 class="header primary">{{post.title}}</h2>
+        <h5 class='text-white'>{{post.created_on}}</h5>
+        <p class="white-text">
+        {{post.content}}
+        </p>
+    </div>
+</div>
+
+<div class="parallax-container">
+    <div class="parallax"><img src="{% static 'imgs/zu0W9Me.png' %}"></div>
+</div>
+
+{% endfor %}
+
+{% endblock%}
