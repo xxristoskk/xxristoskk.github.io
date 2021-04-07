@@ -1,9 +1,9 @@
 from django.views import generic
 from .models import Post
+from django.core.mail import send_mail
 
 class PostList(generic.ListView):
     model = Post
-    # queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
 
 class PostDetail(generic.DetailView):
@@ -13,5 +13,5 @@ class PostDetail(generic.DetailView):
 class AddBlog(generic.CreateView):
     model = Post
     template_name = 'add_blog.html'
-
     fields = ['title','author', 'body','status']
+

@@ -4826,13 +4826,12 @@ small {
 }
 
 .card.horizontal .card-image {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .card.horizontal .card-image img {
   border-radius: 2px 0 0 2px;
-  max-width: 100%;
-  width: auto;
+
 }
 
 .card.horizontal .card-stacked {

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
-
 {% load static %}
+
+{% block title %}Xristos Katsaros - Blog{% endblock %}
 
 {% block content %}
 
@@ -12,6 +13,12 @@
     </div>
 </div>
 
+{% if user.is_authenticated %}
+    <div class="row container center">
+        <a class="waves-effect waves-light btn deep-orange lighten-2" href={% url 'add_blog' %}>Add Post</a>
+    </div>
+{% endif %}
+
 <div class="parallax-container">
     <div class="parallax"><img src="{% static 'imgs/zu0W9Me.png' %}"></div>
 </div>
@@ -22,6 +29,7 @@
             <div class="row container">
                 <a href={% url 'blog_detail' post.pk %}><h2 class="header primary">{{post.title}}</h2></a>
                 <h5 class='text-white'>{{post.created_on}}</h5>
+                <div class='divider'></div>
                 <p class="white-text">
                     {{post.body|truncatechars_html:140|safe}}
                 </p>
