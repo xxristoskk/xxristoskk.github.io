@@ -8,4 +8,10 @@ class PostList(generic.ListView):
 
 class PostDetail(generic.DetailView):
     model = Post
-    template_name = 'post_detail.html'
+    template_name = 'blog_detail.html'
+
+class AddBlog(generic.CreateView):
+    model = Post
+    template_name = 'add_blog.html'
+
+    fields = ['title','author', 'body','status']

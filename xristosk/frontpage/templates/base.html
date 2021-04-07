@@ -54,6 +54,26 @@
     {% block content %}
     {% endblock %}
 
+    {% if user.is_authenticated %}
+        {% comment %} make a conditional that allows this button to show up if admin is logged in (is_authenticated?) {% endcomment %}
+        <div class="section black">
+            <div class="row container">
+                <a href={% url 'add_blog' %}><button class='waves-light'>Add Post</button></a>
+            </div>
+        </div>
+
+        <div class="parallax-container">
+            <div class="parallax"><img src="{% static 'imgs/zu0W9Me.png' %}"></div>
+        </div>
+    {% endif %}
+
+    <footer class='page-footer black'>
+        <div class='container'>
+            <h5 class='primary'>Contact</h5>
+            <p>email, twitter, linkedin, github</p>
+        </div>
+    </footer>
+
     <script>
         M.AutoInit();
     </script>
