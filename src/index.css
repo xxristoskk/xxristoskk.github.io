@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Sometype Mono', monospace;
+  }
+  body {
+    @apply bg-primary text-text;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl font-bold mb-8 animate-text-slide;
+  }
+  
+  .card {
+    @apply bg-secondary p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500;
+  }
+
+  /* New Skill Panel Styles */
+  .skills-panel {
+    @apply bg-secondary/50 p-6 rounded-xl backdrop-blur-sm;
+  }
+
+  .technical-panel {
+    @apply border-l-4 border-blue-400/50;
+  }
+
+  .core-panel {
+    @apply border-l-4 border-purple-400/50;
+  }
+
+  .skill-card {
+    @apply bg-secondary p-4 rounded-lg transition-all duration-300;
+  }
+
+  .skill-card.technical {
+    @apply hover:shadow-lg hover:shadow-blue-400/10 hover:-translate-y-1;
+  }
+
+  .skill-card.core {
+    @apply hover:shadow-lg hover:shadow-purple-400/10 hover:-translate-y-1;
+  }
+}
