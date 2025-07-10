@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, GraduationCap } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, GraduationCap, Database, BarChart, Wrench, GripVertical } from 'lucide-react';
+import AnimatedSeparator from './components/AnimatedSeparator';
 
 function App() {
   return (
@@ -8,8 +9,8 @@ function App() {
       <motion.section 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="mb-16"
+        transition={{ duration: 1 }}
+        className="mb-8"
       >
         <h1 className="text-5xl md:text-7xl font-bold mb-4">
           <span className="gradient-text">Xristos Katsaros</span>
@@ -19,21 +20,29 @@ function App() {
           <a href="https://www.linkedin.com/in/xristos-katsaros/" className="text-text hover:text-blue-400"><Linkedin size={24} /></a>
           <a href="https://github.com/xxristoskk" className="text-text hover:text-blue-400"><Github size={24} /></a>
         </div>
-        <p className="text-xl text-gray-300">Data Analyst || Data Engineer || Full Stack Developer</p>
+        <p className="text-xl text-gray-300 flex items-center gap-3 mb-1">
+          <span>Data Analyst</span>
+          <GripVertical size={20} className="text-gray-500" />
+          <span>Data Engineer</span>
+          <GripVertical size={20} className="text-gray-500" />
+          <span>Full Stack Developer</span>
+        </p>
       </motion.section>
 
+      <AnimatedSeparator />
+      
       {/* Skills Section */}
-      <section className="mb-16">
+      <section className="mb-8">
         <h2 className="section-title">Skills</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Technical Skills Panel */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
             className="skills-panel technical-panel"
           >
-            <h3 className="text-2xl font-semibold mb-6 text-blue-400">Technical Arsenal</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-blue-400">Technical</h3>
             <div className="grid grid-cols-2 gap-4">
               <div className="skill-card technical">
                 <Code2 className="text-blue-400 mb-2" size={24} />
@@ -45,7 +54,7 @@ function App() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    JavaScript/TypeScript
+                    JavaScript
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
@@ -55,7 +64,7 @@ function App() {
               </div>
               
               <div className="skill-card technical">
-                <Code2 className="text-green-400 mb-2" size={24} />
+                <Database className="text-green-400 mb-2" size={24} />
                 <h4 className="text-lg font-medium mb-2">Backend</h4>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
@@ -74,7 +83,7 @@ function App() {
               </div>
 
               <div className="skill-card technical">
-                <Code2 className="text-purple-400 mb-2" size={24} />
+                <BarChart className="text-purple-400 mb-2" size={24} />
                 <h4 className="text-lg font-medium mb-2">Data Analysis</h4>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
@@ -93,7 +102,7 @@ function App() {
               </div>
 
               <div className="skill-card technical">
-                <Code2 className="text-yellow-400 mb-2" size={24} />
+                <Wrench className="text-yellow-400 mb-2" size={24} />
                 <h4 className="text-lg font-medium mb-2">Tools</h4>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
@@ -117,10 +126,10 @@ function App() {
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
             className="skills-panel core-panel"
           >
-            <h3 className="text-2xl font-semibold mb-6 text-purple-400">Core Foundation</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-purple-400">Foundational</h3>
             <div className="space-y-6">
               <div className="skill-card core">
                 <div className="flex items-center gap-3 mb-4">
@@ -157,7 +166,7 @@ function App() {
                   Philosophy background enabling systematic problem-solving and logical analysis of complex challenges.
                 </p>
                 <div className="mt-3 text-sm text-gray-400">
-                  Background: Philosophy studies at Brooklyn College
+                  Background: Philosophy studies at Brooklyn College & Scientific studies at Harold Washington College.
                 </div>
               </div>
             </div>
@@ -165,9 +174,11 @@ function App() {
         </div>
       </section>
 
+      <AnimatedSeparator />
+
       {/* Projects Section */}
-      <section className="mb-16">
-        <h2 className="section-title">Featured Projects</h2>
+      <section className="mb-8">
+        <h2 className="section-title">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="card">
             <h3 className="text-xl font-semibold mb-2">Vibe Atlas</h3>
@@ -190,8 +201,10 @@ function App() {
         </div>
       </section>
 
+      <AnimatedSeparator />
+
       {/* Experience Section */}
-      <section className="mb-16">
+      <section className="mb-8">
         <h2 className="section-title">Experience</h2>
         <div className="space-y-8">
           <div className="card">
@@ -224,6 +237,7 @@ function App() {
           </div>
         </div>
       </section>
+      <AnimatedSeparator />
 
       {/* Education Section */}
       <section>
