@@ -19,7 +19,7 @@ function App() {
           <a href="https://www.linkedin.com/in/xristos-katsaros/" className="text-text hover:text-blue-400"><Linkedin size={24} /></a>
           <a href="https://github.com/xxristoskk" className="text-text hover:text-blue-400"><Github size={24} /></a>
         </div>
-        <p className="text-xl text-gray-300">Data Analyst || Engineer || Full Stack Developer</p>
+        <p className="text-xl text-gray-300">Data Analyst || Data Engineer || Full Stack Developer</p>
       </motion.section>
 
       {/* Skills Section */}
@@ -75,7 +75,7 @@ function App() {
 
               <div className="skill-card technical">
                 <Code2 className="text-purple-400 mb-2" size={24} />
-                <h4 className="text-lg font-medium mb-2">Data Science</h4>
+                <h4 className="text-lg font-medium mb-2">Data Analysis</h4>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-purple-400 rounded-full"></span>
@@ -106,7 +106,7 @@ function App() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
-                    Docker
+                    Linux
                   </li>
                 </ul>
               </div>
