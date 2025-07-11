@@ -50,7 +50,7 @@ function App() {
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    React & React Hooks
+                    React
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
@@ -88,15 +88,15 @@ function App() {
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-purple-400 rounded-full"></span>
-                    Pandas & NumPy
+                    Pandas
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-purple-400 rounded-full"></span>
-                    Scikit-Learn
+                    Numpy
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-purple-400 rounded-full"></span>
-                    Data Visualization
+                    Plotly
                   </li>
                 </ul>
               </div>
@@ -107,7 +107,7 @@ function App() {
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
-                    Git & GitHub
+                    Git
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
@@ -212,10 +212,10 @@ function App() {
               <Briefcase className="text-blue-400" size={24} />
               <div>
                 <h3 className="text-xl font-semibold">ASPCA</h3>
-                <p className="text-gray-400">Data Entry Contractor</p>
+                <p className="text-gray-400">Data Entry Specialist</p>
                 <p className="text-sm text-gray-500">September 2023 – December 2023</p>
                 <ul className="mt-4 list-disc list-inside text-gray-300">
-                  <li>Cleaned and revised animal clinical intakes from 2019-2022</li>
+                  <li>Cleaned and revised animal clinical intakes</li>
                   <li>Cross-referenced multiple databases to recover missing data</li>
                 </ul>
               </div>
@@ -226,7 +226,7 @@ function App() {
               <Briefcase className="text-blue-400" size={24} />
               <div>
                 <h3 className="text-xl font-semibold">Qri</h3>
-                <p className="text-gray-400">Data Analyst and Research Consultant</p>
+                <p className="text-gray-400">Data Analyst and Research Assistant</p>
                 <p className="text-sm text-gray-500">February 2020 – February 2021</p>
                 <ul className="mt-4 list-disc list-inside text-gray-300">
                   <li>Published data analysis research about social media, criminal justice, and COVID-19</li>
@@ -260,6 +260,16 @@ function App() {
                 <h3 className="text-xl font-semibold">Brooklyn College</h3>
                 <p className="text-gray-400">Philosophy and Urban Policy</p>
                 <p className="text-sm text-gray-500">2016-2018</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="flex items-start gap-4">
+              <GraduationCap className="text-blue-400" size={24} />
+              <div>
+                <h3 className="text-xl font-semibold">Harold Washington College</h3>
+                <p className="text-gray-400">Philosophy and Biology</p>
+                <p className="text-sm text-gray-500">2013-2015</p>
               </div>
             </div>
           </div>
