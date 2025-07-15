@@ -198,6 +198,33 @@ function App() {
               </a>
             </div>
           </div>
+          <div className="card">
+            <h3 className="text-xl font-semibold mb-2">We Built This City On Bots and Trolls</h3>
+            <p className="text-gray-300 mb-4">Analyzing the growth of disruptive Twitter accounts between 2012-2020.</p>
+            <div className="flex gap-4">
+              <a href="https://medium.com/qri-io/we-built-this-city-on-bots-trolls-905065758fd4" className="flex items-center gap-2 text-blue-400 hover:text-blue-300">
+                <ExternalLink size={16} /> Read More
+              </a>
+            </div>
+          </div>
+          <div className="card">
+            <h3 className="text-xl font-semibold mb-2">What Do People Want From Democrats?</h3>
+            <p className="text-gray-300 mb-4">Taking deep dive into Twitter discourse about the 2020 Democratic primary.</p>
+            <div className="flex gap-4">
+              <a href="https://medium.com/qri-io/what-do-people-want-from-democrats-4642e25b2add" className="flex items-center gap-2 text-blue-400 hover:text-blue-300">
+                <ExternalLink size={16} /> Read More
+              </a>
+            </div>
+          </div>
+          <div className="card">
+            <h3 className="text-xl font-semibold mb-2">Stable Audio Sample Generator</h3>
+            <p className="text-gray-300 mb-4">AI Sound generator powered by Stable Audio.</p>
+            <div className="flex gap-4">
+              <a href="https://github.com/xxristoskk/stable-audio-sample-generator" className="flex items-center gap-2 text-blue-400 hover:text-blue-300">
+                <ExternalLink size={16} /> Read More
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -239,40 +266,61 @@ function App() {
       </section>
       <AnimatedSeparator />
 
-      {/* Education Section */}
+      {/* Contact Section */}
       <section>
-        <h2 className="section-title">Education</h2>
-        <div className="space-y-6">
-          <div className="card">
-            <div className="flex items-start gap-4">
-              <GraduationCap className="text-blue-400" size={24} />
-              <div>
-                <h3 className="text-xl font-semibold">Flatiron School</h3>
-                <p className="text-gray-400">Immersive Data Science Bootcamp</p>
-                <p className="text-sm text-gray-500">2019</p>
-              </div>
+        <h2 className="section-title">Contact</h2>
+        <div className="max-w-lg">
+          <form 
+            action="https://formspree.io/f/xdkdnqze" 
+            method="POST"
+            className="space-y-6"
+          >
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                className="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Your name"
+              />
             </div>
-          </div>
-          <div className="card">
-            <div className="flex items-start gap-4">
-              <GraduationCap className="text-blue-400" size={24} />
-              <div>
-                <h3 className="text-xl font-semibold">Brooklyn College</h3>
-                <p className="text-gray-400">Philosophy and Urban Policy</p>
-                <p className="text-sm text-gray-500">2016-2018</p>
-              </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="yourname@something.com"
+              />
             </div>
-          </div>
-          <div className="card">
-            <div className="flex items-start gap-4">
-              <GraduationCap className="text-blue-400" size={24} />
-              <div>
-                <h3 className="text-xl font-semibold">Harold Washington College</h3>
-                <p className="text-gray-400">Philosophy and Biology</p>
-                <p className="text-sm text-gray-500">2013-2015</p>
-              </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="4"
+                className="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Your message..."
+              ></textarea>
             </div>
-          </div>
+            <button
+              type="submit"
+              className="w-full px-6 py-3 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition-colors duration-200"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </section>
     </div>
