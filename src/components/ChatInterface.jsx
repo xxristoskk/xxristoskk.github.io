@@ -224,15 +224,17 @@ const ChatInterface = () => {
         content: systemPrompt
       };
 
-      const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+      const response = await fetch('https://xxristoskk-github-io.vercel.app/api/chat', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_DEEPSEEK_API_KEY}`
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          model: 'deepseek-chat',
-          messages: [systemMessage, ...messages, userMessage]
+          systemMessage: {
+            role: 'system',
+            content: systemPrompt
+          },
+          messages: [...messages, userMessage]
         })
       });
 
