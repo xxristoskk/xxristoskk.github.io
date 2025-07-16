@@ -167,7 +167,7 @@ function App() {
                   Philosophy background enabling systematic problem-solving and logical analysis of complex challenges.
                 </p>
                 <div className="mt-3 text-sm text-gray-400">
-                  Background: Philosophy studies at Brooklyn College & Scientific studies at Harold Washington College.
+                  Background: Philosophy at Brooklyn College & Biology at Harold Washington College.
                 </div>
               </div>
             </div>
